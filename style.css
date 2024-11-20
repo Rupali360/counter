@@ -15,13 +15,21 @@ body {
   height: 40vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  padding: 20px 50px;
   gap: 20px;
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: 2px 5px black;
   /* min-width: 200px; */
+}
+
+.counter-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  width: 100%;
 }
 p {
   font-size: 45px;
@@ -55,7 +63,7 @@ p {
 }
 #buttons {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 5px;
 }
 #evenOdd {

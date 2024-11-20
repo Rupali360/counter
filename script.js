@@ -1,6 +1,7 @@
 const myCount = document.getElementById("count");
 console.log(myCount.innerText);
 const evenOdd = document.getElementById("evenOdd");
+const center = document.getElementById("center")
 let a = 0;
 function getEvenOdd() {
   if (a % 2 == 0) {
@@ -13,6 +14,7 @@ function incr() {
   a++;
   evenOdd.innerText = getEvenOdd();
   myCount.textContent = a;
+  center.innerText="";
 }
 function decr() {
   if(a-1<0){
@@ -26,7 +28,8 @@ function decr() {
 }
 function reset() {
   a = 0;
-  evenOdd.innerText = "START";
+  evenOdd.innerText = "Odd/Even";
 
   myCount.textContent = a;
+  center.innerText="Start Now";
 }
